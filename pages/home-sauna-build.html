@@ -78,8 +78,8 @@
       /* Requirement list */
       .req-list {
         margin: 24px 0 32px;
-        padding-left: 0;
-        list-style: none;
+        padding-left: 20px;
+        list-style: disc;
         max-width: 640px;
       }
 
@@ -87,19 +87,13 @@
         font-size: 16px;
         line-height: 1.75;
         color: var(--color-text);
-        padding: 14px 0;
-        border-bottom: 1px solid var(--color-border-soft);
-      }
-
-      .req-list li:first-child {
-        border-top: 1px solid var(--color-border-soft);
+        padding: 6px 0;
       }
 
       .req-label {
         font-family: var(--font-display);
         font-weight: 500;
-        display: block;
-        margin-bottom: 4px;
+        display: inline;
       }
 
       /* Three-up diagram row */
@@ -128,9 +122,10 @@
       }
 
       .diagram-credit {
-        font-size: 12px;
+        font-size: 11px;
         color: var(--color-text-muted);
-        margin-top: 6px;
+        font-style: italic;
+        margin-top: 4px;
         text-align: center;
       }
 
@@ -218,26 +213,11 @@
           <p>Like any engineering problem, a list of requirements was forming in my head:</p>
 
           <ul class="req-list">
-            <li>
-              <span class="req-label">Heater size and stone load</span>
-              The stones need enough thermal mass to flash water into steam on contact. Undersized heaters just get doused.
-            </li>
-            <li>
-              <span class="req-label">Temperature ceiling</span>
-              A proper Finnish sauna runs 80–100°C. Most infrared saunas top out around 50°C. Löyly doesn't work at that temperature.
-            </li>
-            <li>
-              <span class="req-label">Bench height relative to the heat pocket</span>
-              Heat stratifies in a sauna room — hot at the top, cold at the floor. Your bench needs to put you in the heat pocket, with your feet above the stones. The Finns call this the first law of löyly. Most North American kits have ceilings too low to achieve it.
-            </li>
-            <li>
-              <span class="req-label">Room volume</span>
-              Too small and you're sitting on top of the heater getting blasted with radiant heat. You want convective heat — like a hot air bath — which requires enough distance and air volume to develop.
-            </li>
-            <li>
-              <span class="req-label">Ventilation</span>
-              Fresh air needs to come in while stale, CO₂-heavy air exhausts out. Most gym saunas skip this entirely, which is why they feel suffocating after a few minutes. A properly ventilated sauna, you leave because you've had enough heat, not because you can't breathe.
-            </li>
+            <li><span class="req-label">Heater size and stone load</span> — The stones need enough thermal mass to flash water into steam on contact. Undersized heaters just get doused.</li>
+            <li><span class="req-label">Temperature ceiling</span> — A proper Finnish sauna runs 80–100°C. Most infrared saunas top out around 50°C. Löyly doesn't work at that temperature.</li>
+            <li><span class="req-label">Bench height relative to the heat pocket</span> — Heat stratifies in a sauna room — hot at the top, cold at the floor. Your bench needs to put you in the heat pocket, with your feet above the stones. The Finns call this the first law of löyly. Most North American kits have ceilings too low to achieve it.</li>
+            <li><span class="req-label">Room volume</span> — Too small and you're sitting on top of the heater getting blasted with radiant heat. You want convective heat — like a hot air bath — which requires enough distance and air volume to develop.</li>
+            <li><span class="req-label">Ventilation</span> — Fresh air needs to come in while stale, CO₂-heavy air exhausts out. Most gym saunas skip this entirely, which is why they feel suffocating after a few minutes. A properly ventilated sauna, you leave because you've had enough heat, not because you can't breathe.</li>
           </ul>
 
           <div class="diagram-row">

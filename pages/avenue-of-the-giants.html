@@ -66,7 +66,7 @@
         border-radius: 4px;
         padding: 24px;
         display: grid;
-        grid-template-columns: repeat(3, 1fr);
+        grid-template-columns: repeat(4, 1fr);
         gap: 20px;
         text-align: center;
         margin-bottom: 20px;
@@ -104,9 +104,9 @@
       }
 
       .strava-img-caption {
-        font-size: 12px;
+        font-size: 11px;
         color: var(--color-text-muted);
-        margin-top: 6px;
+        margin-top: 4px;
         font-style: italic;
         text-align: center;
       }
@@ -138,9 +138,9 @@
       }
 
       .post-img-caption {
-        font-size: 13px;
+        font-size: 11px;
         color: var(--color-text-muted);
-        margin-top: 10px;
+        margin-top: 6px;
         font-style: italic;
       }
 
@@ -192,7 +192,7 @@
 
       @media (max-width: 640px) {
         .post-headline { font-size: 28px; }
-        .strava-stats { grid-template-columns: 1fr 1fr; }
+        .strava-stats { grid-template-columns: 1fr 1fr; gap: 12px; }
         .strava-img-pair { grid-template-columns: 1fr; }
       }
     </style>
@@ -224,7 +224,6 @@
           <a href="not-work.html" class="post-back">← Not Work</a>
           <p class="post-eyebrow">Cycling · April 2026</p>
           <h1 class="post-headline">Cycling the Avenue of the Giants</h1>
-          <p class="post-dek">62 miles · 4h36m · 8lbs of miniature dachshund</p>
         </div>
       </section>
 
@@ -243,6 +242,10 @@
             <div>
               <span class="stat-value">1,900 ft</span>
               <span class="stat-label">Elevation gain</span>
+            </div>
+            <div>
+              <span class="stat-value">8 lbs</span>
+              <span class="stat-label">Miniature dachshund</span>
             </div>
           </div>
           <div class="strava-img-pair">
@@ -305,7 +308,7 @@
             <div class="carve-out-item">
               <h3 class="carve-out-title">Acquired — Formula One episode</h3>
               <p>
-                Credit to <a href="https://www.acquired.fm" target="_blank" rel="noreferrer">Acquired</a> for the carve outs format, and for their Formula One episode which I had on during part of this ride. It's wild to have completed a bike ride longer than an Acquired episode, and not something I would have been brave enough to do a year ago.
+                Credit to <a href="https://www.acquired.fm" target="_blank" rel="noreferrer">Acquired</a> for the carve outs format, and for their <a href="https://www.acquired.fm/episodes/formula-1" target="_blank" rel="noreferrer">Formula One episode</a> which I had on during part of this ride. It's wild to have completed a bike ride longer than an Acquired episode, and not something I would have been brave enough to do a year ago.
               </p>
             </div>
 
@@ -314,9 +317,15 @@
               <p>
                 On our last long ride we forgot a hiking pack for Chip, and he ended up riding in our emptied-out car emergency kit — the black drawstring bag he's pictured in here. That was enough motivation to splurge on some proper made-for-dog backpacks, and everyone was significantly more comfortable for it.
               </p>
-              <div class="post-img-wrap">
-                <img src="../assets/avenue-of-the-giants/avenue-chip-drawstring.jpg" alt="Chip in the old drawstring bag" />
-                <p class="post-img-caption">Chip in the drawstring bag — the previous solution.</p>
+              <div class="strava-img-pair" style="margin-top: 16px;">
+                <div>
+                  <img src="../assets/avenue-of-the-giants/avenue-chip-drawstring.jpg" alt="Chip in the old drawstring bag" />
+                  <p class="strava-img-caption">Before</p>
+                </div>
+                <div>
+                  <img src="../assets/avenue-of-the-giants/avenue-chip-new-bag.jpg" alt="Chip in his new proper dog backpack" />
+                  <p class="strava-img-caption">After</p>
+                </div>
               </div>
             </div>
 
