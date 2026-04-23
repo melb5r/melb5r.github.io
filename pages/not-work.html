@@ -6,13 +6,61 @@
     <title>Melissa Buckley — Not Work</title>
     <meta
       name="description"
-      content="Not work: cycling, mushrooms, home sauna build, and other projects that show how Melissa Buckley thinks and spends her time."
+      content="Cycling, woodworking, mushrooms, and other things Melissa Buckley does because she wants to."
     />
     <link
       href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,500;1,400&family=DM+Sans:wght@300;400;500&display=swap"
       rel="stylesheet"
     />
     <link rel="stylesheet" href="../css/style.css" />
+    <style>
+      .hobby-block {
+        background: var(--color-surface);
+        border: 1px solid var(--color-border-soft);
+        border-radius: 4px;
+        padding: 28px 32px;
+        margin-bottom: 16px;
+      }
+
+      .hobby-title {
+        font-family: var(--font-display);
+        font-size: 22px;
+        font-weight: 500;
+        margin-bottom: 12px;
+      }
+
+      .hobby-desc {
+        font-size: 15px;
+        line-height: 1.75;
+        color: var(--color-text-muted);
+        max-width: 580px;
+      }
+
+      .hobby-posts {
+        margin-top: 18px;
+        padding-top: 16px;
+        border-top: 1px solid var(--color-border-soft);
+      }
+
+      .hobby-posts-label {
+        font-size: 11px;
+        text-transform: uppercase;
+        letter-spacing: 0.12em;
+        color: var(--color-text-muted);
+        margin-bottom: 8px;
+      }
+
+      .hobby-post-link {
+        display: block;
+        font-size: 14px;
+        color: var(--color-accent);
+        padding: 3px 0;
+      }
+
+      .hobby-post-link:hover {
+        text-decoration: underline;
+      }
+    </style>
   </head>
   <body>
     <header class="site-header">
@@ -22,8 +70,7 @@
           <a href="about.html">About</a>
           <a href="work.html">Work</a>
           <a href="not-work.html">Not Work</a>
-          <a href="writing.html">Writing</a>
-          <a href="resume.html">Resume</a>
+          <a href="../assets/Melissa_Buckley_Resume_2026.pdf" target="_blank" rel="noreferrer">Resume</a>
         </nav>
         <div class="nav-icons">
           <a href="https://www.linkedin.com/in/melissa-buckley-05/" target="_blank" rel="noreferrer" aria-label="LinkedIn">
@@ -40,46 +87,50 @@
       <section>
         <div class="container">
           <p class="page-subtitle" style="margin-bottom: 32px;">
-            Things I do because I want to, and the projects they might become.
+            A glimpse into the hobbies occupying my career break and the projects they might become.
           </p>
-          <div class="grid">
-            <article class="card">
-              <div class="card-label">Active</div>
-              <h3 class="card-title">Cycling</h3>
-              <p class="card-body">
-                Road and gravel riding around San Francisco and Marin. I've been
-                getting into training with power meters — there's more engineering
-                in endurance sport than most people realise.
-              </p>
-            </article>
 
-            <article class="card">
-              <div class="card-label">Active</div>
-              <h3 class="card-title">Mushrooms</h3>
-              <p class="card-body">
-                Foraging and cultivation in the Bay Area. Part pattern recognition,
-                part ecology, part patience. I'm still learning what not to eat.
-              </p>
-            </article>
-
-            <article class="card">
-              <div class="card-label">In Progress</div>
-              <h3 class="card-title">Home Sauna Build</h3>
-              <p class="card-body">
-                Adding a sauna to my home in SF. Turned into a full electrical
-                subpanel project. More fun than it sounds.
-              </p>
-            </article>
-
-            <article class="card">
-              <div class="card-label">Starting</div>
-              <h3 class="card-title"><a href="writing.html">Writing</a></h3>
-              <p class="card-body">
-                Trying to write more — about engineering, career breaks, and
-                whatever else seems worth putting down. See the writing section.
-              </p>
-            </article>
+          <!-- Cycling -->
+          <div class="hobby-block">
+            <h2 class="hobby-title">Cycling</h2>
+            <p class="hobby-desc">
+              Road and gravel riding around San Francisco and Marin. I've been
+              getting into training with power meters — there's more engineering
+              in endurance sport than most people realise. Unless you are a
+              cyclist — then you and your wallet are both very aware.
+            </p>
+            <div class="hobby-posts">
+              <p class="hobby-posts-label">Latest</p>
+              <a href="avenue-of-the-giants.html" class="hobby-post-link">Cycling the Avenue of the Giants →</a>
+            </div>
           </div>
+
+          <!-- Wood Working -->
+          <div class="hobby-block">
+            <h2 class="hobby-title">Wood Working</h2>
+            <p class="hobby-desc">
+              I've always enjoyed woodworking and have found time to do a few
+              furniture projects around the house. I've been accumulating power
+              and hand tools on an as-needed, per-project basis — okay, some were
+              not strictly needed. Lately I'm working on building a sauna.
+            </p>
+            <div class="hobby-posts">
+              <p class="hobby-posts-label">Latest</p>
+              <a href="home-sauna-build.html" class="hobby-post-link">Building a Finnish Sauna in My Backyard →</a>
+            </div>
+          </div>
+
+          <!-- Mushrooms -->
+          <div class="hobby-block">
+            <h2 class="hobby-title">Mushrooms</h2>
+            <p class="hobby-desc">
+              I grow gourmet mushrooms indoors — managing humidity, temperature,
+              and cultures to produce varieties you just can't find at Whole Foods.
+              It's part science project, part patience exercise, and the results
+              are worth it.
+            </p>
+          </div>
+
         </div>
       </section>
     </main>
@@ -93,4 +144,3 @@
     <script src="../js/main.js"></script>
   </body>
 </html>
-

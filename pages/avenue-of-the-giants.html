@@ -1,0 +1,337 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Cycling the Avenue of the Giants — Melissa Buckley</title>
+    <meta
+      name="description"
+      content="62 miles through Northern California's tallest trees — my first metric century, with 8lbs of miniature dachshund on my back."
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,500;1,400&family=DM+Sans:wght@300;400;500&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="../css/style.css" />
+    <style>
+      .post-header {
+        padding: 60px 0 40px;
+        border-top: none;
+      }
+
+      .post-back {
+        font-size: 13px;
+        color: var(--color-text-muted);
+        margin-bottom: 32px;
+        display: block;
+      }
+
+      .post-back:hover {
+        color: var(--color-accent);
+        text-decoration: none;
+      }
+
+      .post-eyebrow {
+        font-size: 11px;
+        text-transform: uppercase;
+        letter-spacing: 0.12em;
+        color: var(--color-text-muted);
+        margin-bottom: 16px;
+      }
+
+      .post-headline {
+        font-family: var(--font-display);
+        font-size: 38px;
+        font-weight: 500;
+        letter-spacing: -0.02em;
+        line-height: 1.2;
+        margin-bottom: 16px;
+      }
+
+      .post-dek {
+        font-size: 18px;
+        color: var(--color-text-muted);
+        line-height: 1.6;
+        margin-bottom: 0;
+      }
+
+      /* By the numbers */
+      .post-numbers {
+        padding: 36px 0;
+      }
+
+      .strava-stats {
+        background: var(--color-surface);
+        border: 1px solid var(--color-border-soft);
+        border-radius: 4px;
+        padding: 24px;
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 20px;
+        text-align: center;
+        margin-bottom: 20px;
+      }
+
+      .stat-value {
+        font-family: var(--font-display);
+        font-size: 26px;
+        font-weight: 500;
+        color: var(--color-text);
+        display: block;
+      }
+
+      .stat-label {
+        font-size: 12px;
+        text-transform: uppercase;
+        letter-spacing: 0.1em;
+        color: var(--color-text-muted);
+        margin-top: 4px;
+        display: block;
+      }
+
+      .strava-img-pair {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 16px;
+      }
+
+      .strava-img-pair img {
+        width: 100%;
+        height: auto;
+        display: block;
+        border-radius: 4px;
+        border: 1px solid var(--color-border-soft);
+      }
+
+      .strava-img-caption {
+        font-size: 12px;
+        color: var(--color-text-muted);
+        margin-top: 6px;
+        font-style: italic;
+        text-align: center;
+      }
+
+      /* Post body */
+      .post-body {
+        padding: 0 0 60px;
+      }
+
+      .post-body p {
+        font-size: 16px;
+        line-height: 1.8;
+        color: var(--color-text);
+        margin-bottom: 1.25rem;
+        max-width: 640px;
+      }
+
+      /* Post images */
+      .post-img-wrap {
+        margin: 32px 0;
+      }
+
+      .post-img-wrap img {
+        width: 100%;
+        height: auto;
+        display: block;
+        border-radius: 4px;
+        border: 1px solid var(--color-border-soft);
+      }
+
+      .post-img-caption {
+        font-size: 13px;
+        color: var(--color-text-muted);
+        margin-top: 10px;
+        font-style: italic;
+      }
+
+      /* Carve Outs */
+      .carve-outs {
+        margin-top: 48px;
+        padding-top: 40px;
+        border-top: 1px solid var(--color-border-soft);
+      }
+
+      .carve-outs-label {
+        font-size: 11px;
+        text-transform: uppercase;
+        letter-spacing: 0.12em;
+        color: var(--color-text-muted);
+        margin-bottom: 24px;
+      }
+
+      .carve-out-item {
+        background: var(--color-surface);
+        border: 1px solid var(--color-border-soft);
+        border-radius: 4px;
+        padding: 24px 28px;
+        margin-bottom: 16px;
+      }
+
+      .carve-out-title {
+        font-family: var(--font-display);
+        font-size: 18px;
+        font-weight: 500;
+        margin-bottom: 10px;
+      }
+
+      .carve-out-item p {
+        font-size: 15px;
+        line-height: 1.75;
+        color: var(--color-text-muted);
+        margin-bottom: 0.75rem;
+        max-width: 100%;
+      }
+
+      .carve-out-item p:last-child {
+        margin-bottom: 0;
+      }
+
+      .carve-out-item .post-img-wrap {
+        margin: 16px 0 0;
+      }
+
+      @media (max-width: 640px) {
+        .post-headline { font-size: 28px; }
+        .strava-stats { grid-template-columns: 1fr 1fr; }
+        .strava-img-pair { grid-template-columns: 1fr; }
+      }
+    </style>
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="container nav-container">
+        <a class="nav-brand" href="about.html">Melissa Buckley</a>
+        <nav class="nav-links">
+          <a href="about.html">About</a>
+          <a href="work.html">Work</a>
+          <a href="not-work.html">Not Work</a>
+          <a href="../assets/Melissa_Buckley_Resume_2026.pdf" target="_blank" rel="noreferrer">Resume</a>
+        </nav>
+        <div class="nav-icons">
+          <a href="https://www.linkedin.com/in/melissa-buckley-05/" target="_blank" rel="noreferrer" aria-label="LinkedIn">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
+          </a>
+          <a href="mailto:melbuckley05@gmail.com" aria-label="Email">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="4" width="20" height="16" rx="2"/><polyline points="2,4 12,13 22,4"/></svg>
+          </a>
+        </div>
+      </div>
+    </header>
+
+    <main>
+      <section class="post-header">
+        <div class="container">
+          <a href="not-work.html" class="post-back">← Not Work</a>
+          <p class="post-eyebrow">Cycling · April 2026</p>
+          <h1 class="post-headline">Cycling the Avenue of the Giants</h1>
+          <p class="post-dek">62 miles · 4h36m · 8lbs of miniature dachshund</p>
+        </div>
+      </section>
+
+      <!-- By the Numbers -->
+      <section class="post-numbers">
+        <div class="container">
+          <div class="strava-stats">
+            <div>
+              <span class="stat-value">62</span>
+              <span class="stat-label">Miles</span>
+            </div>
+            <div>
+              <span class="stat-value">4h 36m</span>
+              <span class="stat-label">Moving time</span>
+            </div>
+            <div>
+              <span class="stat-value">1,900 ft</span>
+              <span class="stat-label">Elevation gain</span>
+            </div>
+          </div>
+          <div class="strava-img-pair">
+            <div>
+              <img src="../assets/avenue-of-the-giants/avenue-strava-map.jpg" alt="Strava route map" />
+              <p class="strava-img-caption">Route map</p>
+            </div>
+            <div>
+              <img src="../assets/avenue-of-the-giants/avenue-strava-elevation.jpg" alt="Strava elevation profile" />
+              <p class="strava-img-caption">Elevation profile</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Post body -->
+      <section class="post-body">
+        <div class="container">
+
+          <p>
+            This was my longest bike ride to date and my first metric century. Three weeks before, I'd had a bike fit done — and those small adjustments to position made an almost five-hour ride far more comfortable than it had any right to be, even with 8lbs of miniature dachshund on my back.
+          </p>
+
+          <div class="post-img-wrap">
+            <img src="../assets/avenue-of-the-giants/avenue-dogs-backpacks.jpg" alt="Pepper and Chip in their new bike backpacks, ready to ride" />
+            <p class="post-img-caption">Pepper (left) and Chip (right), our two miniature dachshunds, in their new bags getting ready to ride.</p>
+          </div>
+
+          <p>
+            The route is an out-and-back following the famed 31-mile scenic drive through Northern California's Humboldt Redwoods State Park. At 1,900ft of total elevation it's not particularly demanding — mostly rolling hills — which made it a great entry point for a longer ride. There are campsites and restaurants scattered through the park, so plenty of spots to grab a snack, fill up water bottles, or drive through a "world famous" tree.
+          </p>
+
+          <div class="post-img-wrap">
+            <img src="../assets/avenue-of-the-giants/avenue-redwood-crosssection.jpg" alt="Next to a cross section of a massive Redwood tree" />
+            <p class="post-img-caption">Next to a cross section of a massive Redwood tree, with little plaques indicating the tree's age around the rings.</p>
+          </div>
+
+          <p>
+            The real highlight was the scenery, which was genuinely beyond breathtaking. We'd driven the route the day before, and there was nothing like taking it in over hours instead of minutes — biking feels like the way this stretch of road was meant to be experienced.
+          </p>
+
+          <div class="post-img-wrap">
+            <img src="../assets/avenue-of-the-giants/avenue-pamela-redwoods.jpg" alt="Following Pamela through the Avenue of the Giants" />
+            <p class="post-img-caption">Following my wife Pamela through the Avenue of the Giants.</p>
+          </div>
+
+          <p>
+            We also got incredibly lucky with the weather: we rode Sunday to perfect temperatures and clear skies, while Saturday had rained and Monday poured. I'm not sure who would have been more disappointed by bad weather — us or the dogs. (The dogs.)
+          </p>
+
+          <div class="post-img-wrap">
+            <img src="../assets/avenue-of-the-giants/avenue-park-sign.jpg" alt="Selfie at the Humboldt Redwoods State Park sign" />
+            <p class="post-img-caption">At the southern entrance of the Avenue of the Giants — our turnaround point.</p>
+          </div>
+
+          <!-- Carve Outs -->
+          <div class="carve-outs">
+            <p class="carve-outs-label">Carve Outs</p>
+
+            <div class="carve-out-item">
+              <h3 class="carve-out-title">Acquired — Formula One episode</h3>
+              <p>
+                Credit to <a href="https://www.acquired.fm" target="_blank" rel="noreferrer">Acquired</a> for the carve outs format, and for their Formula One episode which I had on during part of this ride. It's wild to have completed a bike ride longer than an Acquired episode, and not something I would have been brave enough to do a year ago.
+              </p>
+            </div>
+
+            <div class="carve-out-item">
+              <h3 class="carve-out-title">Proper Dog Backpacks</h3>
+              <p>
+                On our last long ride we forgot a hiking pack for Chip, and he ended up riding in our emptied-out car emergency kit — the black drawstring bag he's pictured in here. That was enough motivation to splurge on some proper made-for-dog backpacks, and everyone was significantly more comfortable for it.
+              </p>
+              <div class="post-img-wrap">
+                <img src="../assets/avenue-of-the-giants/avenue-chip-drawstring.jpg" alt="Chip in the old drawstring bag" />
+                <p class="post-img-caption">Chip in the drawstring bag — the previous solution.</p>
+              </div>
+            </div>
+
+          </div>
+
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container footer-content">
+        <span>© 2026 Melissa Buckley</span>
+      </div>
+    </footer>
+
+    <script src="../js/main.js"></script>
+  </body>
+</html>

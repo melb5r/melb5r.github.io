@@ -13,6 +13,22 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="../css/style.css" />
+    <style>
+      .resume-embed-wrap {
+        width: 100%;
+        margin-top: 24px;
+      }
+      .resume-embed-wrap iframe {
+        width: 100%;
+        height: 80vh;
+        border: 1px solid var(--color-border-soft);
+        border-radius: 4px;
+        display: block;
+      }
+      .resume-download {
+        font-size: 14px;
+      }
+    </style>
   </head>
   <body>
     <header class="site-header">
@@ -22,8 +38,7 @@
           <a href="about.html">About</a>
           <a href="work.html">Work</a>
           <a href="not-work.html">Not Work</a>
-          <a href="writing.html">Writing</a>
-          <a href="resume.html">Resume</a>
+          <a href="../assets/Melissa_Buckley_Resume_2026.pdf" target="_blank" rel="noreferrer">Resume</a>
         </nav>
         <div class="nav-icons">
           <a href="https://www.linkedin.com/in/melissa-buckley-05/" target="_blank" rel="noreferrer" aria-label="LinkedIn">
@@ -39,9 +54,12 @@
     <main>
       <section>
         <div class="container">
-          <p class="page-subtitle" style="margin-bottom: 32px;">
-            Resume coming soon.
+          <p class="resume-download">
+            <a href="../assets/Melissa_Buckley_Resume_2026.pdf" download>Download PDF →</a>
           </p>
+          <div class="resume-embed-wrap">
+            <iframe src="../assets/Melissa_Buckley_Resume_2026.pdf" title="Melissa Buckley Resume"></iframe>
+          </div>
         </div>
       </section>
     </main>
